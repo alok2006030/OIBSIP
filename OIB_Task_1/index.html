@@ -1,82 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Link to the external stylesheet -->
   <link rel="stylesheet" href="Assets/css/style.css">
+  <!-- Set the title of the page -->
   <title>Task_1</title>
 </head>
 <body>
+  <!-- Container for the calculator -->
   <div class="container">
+    <!-- Calculator section with a dark theme -->
     <div class="calculator dark">
+      <!-- Theme toggler section (active) -->
       <div class="theme-toggler active">
       </div>
+      <!-- Display screen section -->
       <div class="display-screen">
+        <!-- Display area where calculator output is shown -->
         <div id="display"></div>
       </div>
+      <!-- Buttons section -->
       <div class="buttons">
+        <!-- Table for arranging buttons -->
         <table>
+          <!-- Row 1: Clear, Divide, Multiply, Backspace -->
           <tr>
             <td><button class="btn-operator" id="clear">c</button></td>
             <td><button class="btn-operator" id="/">&divide;</button></td>
             <td><button class="btn-operator" id="*">&times;</button></td>
             <td><button class="btn-operator" id="backspace"><</button></td>
           </tr>
+          <!-- Row 2: Numbers 7, 8, 9, Subtract -->
           <tr>
             <td><button class="btn-number" id="7">7</button></td>
             <td><button class="btn-number" id="8">8</button></td>
             <td><button class="btn-number" id="9">9</button></td>
             <td><button class="btn-operator" id="-">-</button></td>
           </tr>
+          <!-- Row 3: Numbers 4, 5, 6, Add -->
           <tr>
             <td><button class="btn-number" id="4">4</button></td>
             <td><button class="btn-number" id="5">5</button></td>
             <td><button class="btn-number" id="6">6</button></td>
             <td><button class="btn-operator" id="+">+</button></td>
           </tr>
+          <!-- Row 4: Numbers 1, 2, 3, Equal -->
           <tr>
             <td><button class="btn-number" id="1">1</button></td>
             <td><button class="btn-number" id="2">2</button></td>
             <td><button class="btn-number" id="3">3</button></td>
             <td rowspan="2"><button class="btn-equal" id="equal">=</button></td>
           </tr>
+          <!-- Row 5: Parentheses, Number 0, Parentheses -->
           <tr>
             <td><button class="btn-operator" id="(">(</button></td>
             <td><button class="btn-number" id="0">0</button></td>
             <td><button class="btn-operator" id=")">)</button></td>
           </tr>
         </table>
-
       </div>
     </div>
   </div>
+  <!-- Include the JavaScript file for calculator functionality -->
   <script src="Assets/script/script.js"></script>
-
+  <!-- Include the VanillaTilt library for button animations -->
   <script type="text/javascript" src="Assets/script/vanilla-tilt.js"></script>
-        <script>
-        VanillaTilt.init
-        (document.querySelectorAll(".btn-operator"),
-          {
-            max: 2,
-            speed: 400,
-            glare:true,
-            "max-glare": 1,
-          });
-          VanillaTilt.init
-        (document.querySelectorAll(".btn-number"),
-          {
-            max: 2,
-            speed: 400,
-            glare:true,
-            "max-glare": 1,
-          });
-          VanillaTilt.init
-        (document.querySelectorAll(".btn-equal"),
-          {
-            max: 2,
-            speed: 400,
-            glare:true,
-            "max-glare": 1,
-          });
-        </script>
-
+  <!-- Initialize VanillaTilt for operator buttons -->
+  <script>
+    // Initialize VanillaTilt for operator buttons
+    VanillaTilt.init(document.querySelectorAll(".btn-operator"), {
+      max: 2,
+      speed: 400,
+      glare: true,
+      "max-glare": 1,
+    });
+    // Initialize VanillaTilt for number buttons
+    VanillaTilt.init(document.querySelectorAll(".btn-number"), {
+      max: 2,
+      speed: 400,
+      glare: true,
+      "max-glare": 1,
+    });
+    // Initialize VanillaTilt for equal button
+    VanillaTilt.init(document.querySelectorAll(".btn-equal"), {
+      max: 2,
+      speed: 400,
+      glare: true,
+      "max-glare": 1,
+    });
+  </script>
 </body>
 </html>

@@ -5,7 +5,9 @@
 }
 html{
     scroll-behavior: smooth;
-    background-color: rgb(57, 157, 190);
+    background-image: linear-gradient(1deg, 
+   #ff9900, #0099ff, #2bff00, #9900ff, #00ccff);
+    transition: background-color 0.3s ease;
 }
 
 

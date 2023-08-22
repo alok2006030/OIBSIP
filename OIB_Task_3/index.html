@@ -1,32 +1,54 @@
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Task_3</title>
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
-        <link rel="stylesheet" href="Assets/css/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <h2 class="heading">To Do list</h2>
-            <div class="addTask">
-                <input type="text" placeholder="Enter Task">
-                <button>Add</button>
-            </div>
+        <!-- Head section containing metadata and linked resources -->
+<head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Title of the page -->
+    <title>Task_3</title>
+    <!-- Link to Font Awesome CSS for icons -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Preconnect links for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to the Sofia font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    <!-- Main container for the page content -->
+    <div class="container">
+        <!-- Heading for the to-do list -->
+        <h2 class="heading">To Do list</h2>
+        <!-- Container for adding tasks -->
+        <div class="addTask">
+            <!-- Input field for entering a new task -->
+            <input type="text" placeholder="Enter Task">
+            <!-- Button to add a new task -->
+            <button>Add</button>
+        </div>
 
-            <div class="task_block">
-                <div class="RED">
-                    <ol class="notCompleted">
-                    </ol>
-                </div>
-                <div class="GREEN">
-                    <ol class="Completed">
-                    </ol>
-                </div>
+        <!-- Container for displaying tasks -->
+        <div class="task_block">
+            <!-- Container for not completed tasks with a RED background -->
+            <div class="RED">
+                <!-- Ordered list for displaying not completed tasks -->
+                <ol class="notCompleted">
+                    <!-- Task items will be added here -->
+                </ol>
+            </div>
+            <!-- Container for completed tasks with a GREEN background -->
+            <div class="GREEN">
+                <!-- Ordered list for displaying completed tasks -->
+                <ol class="Completed">
+                    <!-- Completed task items will be added here -->
+                </ol>
             </div>
         </div>
-        <script src="Assets/js/script.js"></script>
-    </body>
+    </div>
+    <!-- Link to the JavaScript file for interactive behavior -->
+    <script src="Assets/js/script.js"></script>
+</body>
+
 </html>
